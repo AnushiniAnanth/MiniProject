@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account - HealthLink</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("login.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 50px;
+    }
+    .container {
+      max-width: 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Create New Account</h2>
+  <form id="createAccountForm">
+    <div class="form-group">
+      <label for="newEmail">Email address</label>
+      <input type="email" class="form-control" id="newEmail" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <label for="newPassword">Password</label>
+      <input type="password" class="form-control" id="newPassword" placeholder="Password" required>
+    </div>
+    <div id="createError" class="error">Error: Please enter a valid email and password.</div>
+    <button type="button" class="btn btn-primary" onclick="createAccount()" style="text-decoration: none;">Create Account</button>
+  </form>
+</div>
+
+<script>
+  const validUsers = JSON.parse(localStorage.getItem('validUsers')) || [];
+
+  function createAccount() {
+    const newEmail = document.getElementById('newEmail').value;
+    const newPassword = document.getElementById('newPassword').value;
+    const errorElement = document.getElementById('createError');
+
+    if (newEmail && newPassword) {
+      validUsers.push({ email: newEmail, password: newPassword });
+      localStorage.setItem('validUsers', JSON.stringify(validUsers)); // Save the new user to local storage
+      window.location.href = "login.html"; // Redirect back to login
+    } else {
+      errorElement.style.display = 'block'; // Show error if inputs are invalid
+    }
+  }
+</script>
+
+</body>
+</html>

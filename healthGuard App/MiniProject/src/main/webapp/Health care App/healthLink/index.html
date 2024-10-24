@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <header >
+        <h1>HealthLink</h1>
+        <nav>
+            <img src="healthlink logo.png" alt="Snow" style="width:5%; border-radius: 50%;"> 
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+               <li><a href="#contact">Contact</a></li>
+
+            </ul>
+           
+            <button type="button"  onclick="appointmentpage()"class="btn btn-primary" >Book  an Appointment </button> 
+            
+            
+            <button type="button"  onclick="HelpLine()" class="btn btn-primary" id="appointmentButton">HelpLine <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
+              <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+              <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></button>
+
+            
+<script>
+    function HelpLine(){
+              window.location.href = "HelpLine.html"; 
+          }
+
+
+
+            function appointmentpage(){
+              window.location.href = "appointment.html"; 
+          }
+        </script>
+          
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+
+        <img  class= "img" src="home1.jpeg" style="width: 100%; height: 100%; background-size:cover;align-items: baseline; ">
+  
+        <div class="top-right"><br><br><h3><b>Welcome to HealthCare Clinic</b></h3><br>
+            <h5>Your health is our priority. We provide<br> the best medical services.<br></h5>
+            <h6>"Wherever the art of medicine is loved, <br>there is also a love of humanity."</h6><br>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+              </svg><br><br>
+            <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+            </div>
+           
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+
+        <img  class= "img" src="about.jpeg" style="width: 100%; height: 100%; background-size:cover;align-items: baseline;">
+  
+        <div class="top-left"><br><br><h5>A medical clinic is a healthcare facility that provides a wide <br>range of medical services, typically on an outpatient basis. Clinics are <br>often the first point of contact for patients seeking <br> diagnosis, treatment, or preventive care for various health issues. </h5><br>
+            <br>
+            <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+            </div>
+           
+    </section>
+    <section id="gallery" class="section">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded"> <h2>Gallery</h2></div><br>
+       
+        <centre><fieldset>
+            <label style="--_img: url('1.jpeg')">
+              <input type="radio" name="images" value="Fiddle Leaf">
+            </label>
+            <label style="--_img: url('2.jpeg')">
+              <input type="radio" name="images" value="Pink Princess">
+            </label>
+            <label style="--_img: url('3.jpeg')">
+              <input type="radio" name="images" value="Monstera" checked>
+            </label>
+            <label style="--_img: url('4.jpeg')">
+              <input type="radio" name="images" value="Pothos">
+            </label>
+            <label style="--_img: url('5.jpeg')">
+              <input type="radio" name="images" value="Rubber Tree">
+            </label>
+          </fieldset>
+          <br>
+          <fieldset>
+            <label style="--_img: url('6.jpeg')">
+              <input type="radio" name="images" value="Fiddle Leaf">
+            </label>
+            <label style="--_img: url('7.avif')">
+              <input type="radio" name="images" value="Pink Princess">
+            </label>
+            <label style="--_img: url('8.jpeg')">
+              <input type="radio" name="images" value="Monstera" checked>
+            </label>
+            <label style="--_img: url('10.jpeg')">
+              <input type="radio" name="images" value="Pothos">
+            </label>
+            <label style="--_img: url('9.jpeg')">
+              <input type="radio" name="images" value="Rubber Tree">
+            </label>
+          </fieldset></centre>
+           
+    </section>
+
+
+    
+    <section id="services" class="section">
+<div>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded"> <h2>Our Services</h2></div>
+      <div class="card" style="display: flex; flex-direction: row; gap: 20px;">
+          <div class="service-card" style="width: 18rem;">
+              <img src="generalCheckup.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">General Check-up</h5>
+                  <p class="card-text">Comprehensive health check-ups by expert doctors.</p>
+                  <a href="#" class="btn btn-primary">More</a>
+              </div>
+          </div>
+  
+          <div class="service-card" style="width: 18rem;">
+              <img src="dendal.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dental Care</h5>
+                  <p class="card-text">Top-most dental treatments and oral health care.</p>
+                  <a href="#" class="btn btn-primary">More</a>
+              </div>
+          </div>
+  
+          <div class="service-card" style="width: 18rem;">
+              <img src="cardiology.avif" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Cardiology</h5>
+                  <p class="card-text">Heart care services by our team of cardiologists.</p>
+                  <a href="#" class="btn btn-primary">More</a>
+              </div>
+          </div>
+  
+          <div class="service-card" style="width: 18rem;">
+              <img src="ortho2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Orthology</h5>
+                  <p class="card-text">Heart care services by our team of Orthology.</p>
+                  <a href="#" class="btn btn-primary">More</a>
+              </div>
+          </div>
+  
+    </div>
+  </section>
+  
+
+ <section id="doctors" class="section">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded"> <h2>Meet Our Doctors</h2></div>
+    
+
+
+        <div class="card" style="display: flex; flex-direction: row; gap: 20px;">
+          <div class="service-card" style="width: 18rem;">
+              <img src="harini2.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                  <h5 class="card-title">Dr.Anushini </h5>
+                  <p class="card-text">Cardiologist</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+          </div>
+
+
+
+          <div class="service-card" style="width: 18rem;">
+            <img src="bazeer.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dr.Rajaveni</h5>
+                <p class="card-text">Psycologist</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+            </div>
+        </div>
+  
+          <div class="service-card" style="width: 18rem;">
+              <img src="narmi.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dr.Narmitha</h5>
+                  <p class="card-text">Orthologist.</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+          </div>
+  
+          <div class="service-card" style="width: 18rem;">
+              <img src="sachin.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dr.Sachin</h5>
+                  <p class="card-text">Dentist</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+          </div>
+  
+          <div class="service-card" style="width: 18rem;">
+              <img src="hari.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dr.Krishnan</h5>
+                  <p class="card-text">General Physician</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+          </div>
+
+         
+  
+
+
+
+
+
+    </section>
+
+
+
+    <section id="review " class="section"> 
+
+
+      <div class="container">
+        <div class="shadow-lg p-3 mb-5 bg-white rounded"> <h2>Patient Review </h2></div>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" placeholder="Rate out of 5" required>
+            </div>
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" placeholder="Write your review here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <div id="reviewOutput">
+            <h2>Submitted Reviews</h2>
+            <ul id="reviewList"></ul>
+        </div>
+    </div>
+
+    <script>
+      document.getElementById('reviewForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        // Collect form data
+        const name = document.getElementById('name').value;
+        const rating = document.getElementById('rating').value;
+        const review = document.getElementById('review').value;
+    
+        // Simple validation
+        if (name === '' || rating === '' || review === '') {
+            alert('Please fill in all fields.');
+            return;
+        }
+    
+        // Add review to the list
+        const reviewList = document.getElementById('reviewList');
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<strong>${name}</strong> (Rating: ${rating}/5)<br>${review}`;
+        reviewList.appendChild(listItem);
+    
+        // Clear form fields
+        document.getElementById('reviewForm').reset();
+    });
+    
+    </script>
+
+    </section>
+
+    
+    <section id="contact" class="section">
+        <h2>Contact Us </h2>
+        <p>Email: info@healthLink.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+      <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+      <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+    </svg> </div>
+    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+    </svg></div>
+    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id=" location" class="bi bi-geo-alt" viewBox="0 0 16 16">
+      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/> 
+    </svg></div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

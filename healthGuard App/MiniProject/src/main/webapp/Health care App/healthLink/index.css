@@ -1,0 +1,326 @@
+
+@import "https://unpkg.com/open-props" layer(design.system);
+
+
+#appointmentButton {
+  position: absolute; 
+  top: 150px; 
+  right : 20px;
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: white; 
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+#appointmentButton:hover {
+  background-color: #0056b3; 
+}
+#location{
+  position: absolute; 
+  top: 20px; 
+  right : 20px;
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: white; 
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer; 
+
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #005f5f;
+    
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    height: auto;
+    
+}
+
+
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+   
+}
+#home.section{
+        position: relative;
+       
+        color: black;
+
+}
+
+
+.top-right{
+        position: absolute;
+         top: 8%;
+       right:100px;
+       left: 40%
+         
+        
+      }
+      .top-left{
+        position: absolute;
+         top: 170%;
+     left:100px;
+       right: 40%
+         
+        
+      }
+
+
+     
+
+
+.service-card, .doctor-card {
+    border: 1px solid #ccc;
+   
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 200px;
+
+    background-color: #fff;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 20px;
+}
+
+form label, form input {
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    padding: 0.5rem;
+    background-color: #005f5f;
+ 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f5f;
+}
+
+
+
+/* gallery  */
+
+
+
+
+
+@layer demo {
+  fieldset {
+    grid-template-columns:
+      var(--col-1, 1fr)
+      var(--col-2, 1fr)
+      var(--col-3, 1fr)
+      var(--col-4, 1fr)
+      var(--col-5, 1fr);
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: grid-template-columns 2s var(--ease-spring-5);
+    }
+
+    &:has(label:nth-child(1) > input:checked) {
+      --col-1: 5fr;
+      --col-2: 3fr;
+    }
+    &:has(label:nth-child(2) > input:checked) {
+      --col-1: 2fr;
+      --col-2: 5fr;
+      --col-3: 2fr;
+    }
+    &:has(label:nth-child(3) > input:checked) {
+      --col-2: 2fr;
+      --col-3: 5fr;
+      --col-4: 2fr;
+    }
+    &:has(label:nth-child(4) > input:checked) {
+      --col-3: 2fr;
+      --col-4: 5fr;
+      --col-5: 2fr;
+    }
+    &:has(label:nth-child(5) > input:checked) {
+      --col-4: 3fr;
+      --col-5: 5fr;
+    }
+
+    > label {
+      background-image: var(--_img);
+      background-position: center;
+      background-size: auto 125%;
+    }
+  }
+}
+
+
+  html {
+   
+    block-size: 100%;
+    align-items: center;
+  }
+
+ #gallery .body {
+    min-block-size: 100%;
+    display: grid;
+    place-content: center;
+    padding: var(--size-5);
+    gap: var(--size-5);
+  }
+
+  fieldset {
+    inline-size: 80vw;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 50vh;
+    gap: var(--size-3);
+    border: none;
+
+    > label {
+      cursor: pointer;
+      border-radius: var(--radius-4);
+
+      &:focus-within {
+        outline: 1px solid #fff;
+        outline-offset: 5px;
+      }
+
+      > input {
+        opacity: 0;
+      }
+    }
+  }
+
+
+
+
+
+  /* review */
+
+
+
+  #review.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+    
+   
+}
+
+
+#review.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #3da3ac;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+   
+
+}
+
+
+#review.h1, h2 {
+    text-align: center;
+}
+
+
+#review.form-group {
+    margin-bottom: 15px;
+}
+
+
+#review.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+#review.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#review.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#review.button:hover {
+    background-color: #218838;
+}
+
+#reviewOutput {
+    margin-top: 30px;
+}
+
+#reviewList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reviewList li {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
